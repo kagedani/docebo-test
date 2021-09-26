@@ -1,0 +1,12 @@
+HOST = 'localhost'
+USER = 'username'
+PASSWORD = 'password'
+DATABASE = 'docebo_database'
+DROP_STMT = 'DROP TABLE IF EXISTS '
+TYPE_CONVERTER_DICT = {'number':'FLOAT', 'text':'VARCHAR', 'meta_data': 'VARCHAR(1000)'}
+SPECIFIC_FIELDS_TYPE_CONVERTER_DICT = {'created_at':'INTEGER', 'updated_at':'INTEGER'}
+INTEGER_COLUMNS = ['created_at', 'updated_at']
+USELESS_COLUMNS_TO_DROP = ['sid', 'id', 'position', 'meta', 'created_meta', 'updated_meta']
+DROP_RECORD_IF_NULL_FIELDS = ['StateName', 'ReportYear', 'Value', 'MeasureName', 'CountyName']
+DROP_TABLE_BEFORE_CREATE = True
+ZERO_VALUE_RECORDS_REMOVAL = True
