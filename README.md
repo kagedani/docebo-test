@@ -50,6 +50,7 @@ DROP_RECORD_IF_NULL_FIELDS = ['StateName', 'ReportYear', 'Value', 'MeasureName',
 DROP_TABLE_BEFORE_CREATE = True   # true - if the table needs to be dropped before creation / false - if it's the first load
 ZERO_VALUE_RECORDS_REMOVAL = True   # true - if you want to remove records where value = 0
 ```
+**N.B.** if the table exists and you put the ```DROP_TABLE_BEFORE_CREATE``` parameter to *False*, it will return an error.
 
 ## Exercise 2
 In the *exercise_2* folder you can find the .sql script containing all the requested queries.
