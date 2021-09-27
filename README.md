@@ -34,13 +34,13 @@ In details:
 
 If you use the docker-compose command, the *main.py* script will be executed automatically and it keeps going for 10 minutes after the data insertion, for log checks purpose.
 
-If you prefere to install all dependencies right into your local machine, you can use [pip](https://pip.pypa.io/en/stable/)
+If you prefer to install all dependencies right into your local machine, you can use [pip](https://pip.pypa.io/en/stable/)
 
 ```bash
 pip install -r requirements.txt
 ```
 
-After the required libraries installation the program can be launched with 
+After the required libraries installation, the program can be launched with 
 
 ```bash
 python main.py
