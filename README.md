@@ -3,11 +3,11 @@
 ## Exercise 1
 
 ### Database setup
-In *exercise_1/* folder you can find the docker-compose file with it's *.env* file associated. 
+In *exercise_1/* folder you can find the docker-compose file with its *.env* file associated. 
 You can launch the container (in this case is a Postgresql container) with the simple command:
 
 ```bash
-docker-compose -d up
+docker-compose up -d
 ```
 
 where *-d* option stands for 'detached'.
@@ -34,6 +34,14 @@ I've used a virtualenv to execute everything but all the requirements could be i
 pip install -r requirements.txt
 ```
 
+After the required libraries installation the program can be launched with 
+
+```bash
+python main.py
+```
+
+before doing so, I would suggest to have a look at the following section to eventually change some of the parameters of the script.
+
 #### Setup parameters
 
 ```python
@@ -51,6 +59,9 @@ DROP_TABLE_BEFORE_CREATE = True   # true - if the table needs to be dropped befo
 ZERO_VALUE_RECORDS_REMOVAL = True   # true - if you want to remove records where value = 0
 ```
 **N.B.** if the table exists and you put the ```DROP_TABLE_BEFORE_CREATE``` parameter to *False*, it will return an error.
+
+**N.B.2** in the parameter ```USELESS_COLUMNS_TO_DROP``` needs to be specified columns names that are not inserted into ```DROP_RECORD_IF_NULL_FIELDS```, otherwise the program would give an error not finding the column to check **null** values.
+
 
 ## Exercise 2
 In the *exercise_2* folder you can find the .sql script containing all the requested queries.
