@@ -78,9 +78,18 @@ otherwise the changes would not be received by the python container.
 
 **N.B.2** in the parameter ```USELESS_COLUMNS_TO_DROP``` needs to be specified columns names that are not inserted into ```DROP_RECORD_IF_NULL_FIELDS```, otherwise the program would give an error not finding the column to check **null** values.
 
+### Additional considerations and possibile improvements
+
+The script is not a final version, it is just a version that do what it needs to. 
+Some improvements that may be added:
+- incremental insert of records based on 'created_at'/'updated_at' columns
+- additional tables management
+- better datatypes for columns
+- transformations and conversions of fields (even if, I considered this insert as a first layer of replica of the source data)
+- etc. 
 
 ## Exercise 2
 In the *exercise_2* folder you can find the .sql script containing all the requested queries.
 
 ## Exercise 3 
-It is a PDF with all the answers to the third exercise proposed in the test.
+In the *exercise_3* folder you can find a PDF with all the answers to the third exercise proposed in the test.
