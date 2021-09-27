@@ -3,6 +3,7 @@ import json
 import logging
 import utils
 import setup
+import time
 from classes.databaseConfigManager import databaseConfigManager as db_config_manager
 
 if __name__ == '__main__':
@@ -51,6 +52,8 @@ if __name__ == '__main__':
 
     dataframe.columns = map(str.lower, dataframe.columns)
     utils.insert_data(dataframe, columns_datatypes_dict, table_name)
+
+    time.sleep(setup.WAIT_TO_END)
 
     
 

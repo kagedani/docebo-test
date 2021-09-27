@@ -1,11 +1,22 @@
-version: '3'
+version: '3.3'
 
 services:
-  database:
+  docebo-postgres:
     image: 'postgres:latest'
-
     ports:
       - 5432:5432
-
     env_file:
       - .env
+    networks:
+      - docebo-vpn
+
+  python-container:
+    build: python-container/
+    container_name: docebo-python-container
+    depends_on: ['docebo-postgres']
+    networks:
+      - docebo-vpn
+
+networks:
+  docebo-vpn:
+    driver: bridge

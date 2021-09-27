@@ -1,4 +1,4 @@
-HOST = 'localhost'
+HOST = 'docebo-postgres'
 USER = 'username'
 PASSWORD = 'password'
 DATABASE = 'docebo_database'
@@ -10,3 +10,4 @@ USELESS_COLUMNS_TO_DROP = ['sid', 'id', 'position', 'meta', 'created_meta', 'upd
 DROP_RECORD_IF_NULL_FIELDS = ['StateName', 'ReportYear', 'Value', 'MeasureName', 'CountyName']
 DROP_TABLE_BEFORE_CREATE = True
 ZERO_VALUE_RECORDS_REMOVAL = True
+WAIT_TO_END = 600

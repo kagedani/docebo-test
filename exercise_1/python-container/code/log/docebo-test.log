@@ -1,0 +1,13 @@
+09-27 20:42 root         INFO     Docebo-test app is starting
+09-27 20:42 root         DEBUG    Database connection params setup
+09-27 20:42 root         DEBUG    Uploading the dataset
+09-27 20:42 root         INFO     Uploading table AIR_QUALITY_MEASURES_ON_THE_NATIONAL_ENVIRONMENTAL_HEALTH_TRACKING_NETWORK
+09-27 20:42 root         DEBUG    Creating the pandas dataframe
+09-27 20:42 root         DEBUG    Removal of useless metadata columns
+09-27 20:42 root         DEBUG    Converting dataframe columns to its own type
+09-27 20:42 root         DEBUG    Drop and create statements setup
+09-27 20:42 root         ERROR    could not translate host name "docebo-postgres" to address: Unknown host
+
+09-27 20:42 root         ERROR    (psycopg2.OperationalError) could not translate host name "docebo-postgres" to address: Unknown host
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
